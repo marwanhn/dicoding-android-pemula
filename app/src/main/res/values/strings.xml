@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BacaBareng</string>
+    <string name="title">Atomic Habits</string>
+    <string name="author">James Clear</string>
+    <string name="releaseDate">Oktober 16, 2018</string>
+    <string name="rating">4.5</string>
+    <string name="rate">Ratings</string>
+    <string name="genre">Genre</string>
+    <string name="page">Pages</string>
+    <string name="genres">Selft-Dev</string>
+    <string name="pages">351</string>
+    <string name="desc">Deskripsi</string>
+    <string name="description">Orang mengira ketika Anda ingin mengubah hidup, Anda perlu memikirkan hal-hal besar. Namun pakar kebiasaan terkenal kelas dunia James Clear telah menemukan sebuah cara lain. Ia tahu bahwa perubahan nyata berasal dari efek gabungan ratusan keputusan kecil—dari mengerjakan dua push-up sehari, bangun lima menit lebih awal, sampai menahan sebentar hasrat untuk menelepon. Ia menyebut semua tadi atomic habits. Dalam buku terobosan ini, Clear pada hakikatnya mengungkapkan bagaimana perubahan-perubahan sangat remeh ini dapat tumbuh menjadi hasil-hasil yang sangat mengubah hidup. Ia menyingkap beberapa trik sederhana dalam hidup kita (seni Menumpuk Kebiasaan yang terlupakan, kekuatan tak terduga Aturan Dua Menit, atau trik untuk masuk ke dalam Zona Goldilocks), dan menggali ke dalam teori psikologi dan neurosains paling baru untuk menerangkan mengapa semua itu penting. Dalam rangka itu, ia menceritakan kisah-kisah inspiratif para peraih medali emas Olimpiade, para CEO terkemuka, dan ilmuwan-ilmuwan istimewa yang telah menggunakan sains tentang kebiasaan-kebiasaan kecil untuk tetap produktif, tetap termotivasi, dan bahagia. Perubahan-perubahan kecil ini akan mendatangkan pengaruh revolusioner pada karier Anda, hubungan pribadi Anda, dan hidup Anda.</string>
+    <string name="share">S H A R E</string>
+    <string name="bookmark">bookmark</string>
+    <string name="menu_profile">Profile</string>
+    <string name="title_profile">P R O F I L E</string>
+    <string name="nama_profile">Marwan Hasbun Nur</string>
+    <string name="email_profile">hasbunurmarwan10@gmail.com</string>
+</resources>
