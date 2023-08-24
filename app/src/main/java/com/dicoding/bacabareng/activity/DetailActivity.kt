@@ -23,8 +23,8 @@ class DetailActivity : AppCompatActivity() {
         actionbar.setDisplayHomeAsUpEnabled(true)
 
         val books = intent.getParcelableExtra<Books>(EXTRA_ITEM)
-        val btnSave: Button = findViewById(id.btn_save)
-        val actionShare: Button = findViewById(id.action_share)
+//        val btnSave: Button = findViewById(id.btn_save)
+//        val actionShare: Button = findViewById(id.action_share)
 
         var save = false
         if (books != null){
@@ -53,9 +53,9 @@ class DetailActivity : AppCompatActivity() {
                 )
             }
         }
-        btnSave.setOnClickListener {
+        binding.btnSave.setOnClickListener {
             if (!save) {
-                btnSave.setCompoundDrawablesWithIntrinsicBounds(
+                binding.btnSave.setCompoundDrawablesWithIntrinsicBounds(
                     baseline_bookmark_24,0,0,0
                 )
                 Toast.makeText(this, "${books!!.title} berhasil disimpan", Toast.LENGTH_SHORT).show()
@@ -63,7 +63,7 @@ class DetailActivity : AppCompatActivity() {
             }
 
             else {
-                btnSave.setCompoundDrawablesWithIntrinsicBounds(
+                binding.btnSave.setCompoundDrawablesWithIntrinsicBounds(
                     baseline_bookmark_border_24,0,0,0
                 )
                 Toast.makeText(this, "${books!!.title} berhasil dihapus", Toast.LENGTH_SHORT).show()
@@ -71,7 +71,7 @@ class DetailActivity : AppCompatActivity() {
             }
         }
 
-        actionShare.setOnClickListener {
+        binding.actionShare.setOnClickListener {
             val shareIntent = Intent()
             shareIntent.action = Intent.ACTION_SEND
             shareIntent.putExtra(Intent.EXTRA_TEXT, "Hai, ayo kita baca buku ${books!!.title}, hanya di ${books.link}")
