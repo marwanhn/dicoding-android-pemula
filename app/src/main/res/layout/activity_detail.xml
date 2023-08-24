@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
+    android:layout_margin="16dp"
 
     tools:context=".activity.DetailActivity">
 
@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_margin="16dp"
         android:paddingBottom="5dp">
 
         <TextView
@@ -59,7 +60,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="10dp">
 
-            <RelativeLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp">
@@ -70,8 +71,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/rate"
+                    android:gravity="center"
                     android:textColor="@color/text"
-                    android:text="@string/rate" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/tv_genre"
@@ -79,8 +85,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/genre"
                     android:textColor="@color/text"
-                    android:text="@string/genre" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/tv_page"
@@ -88,17 +101,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/page"
                     android:textColor="@color/text"
-                    tools:ignore="RelativeOverlap"
-                    android:text="@string/page" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="RelativeOverlap" />
 
                 <ImageView
                     android:id="@+id/iv_rating"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_below="@+id/tv_rate"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
                     android:contentDescription="@string/rate"
-                    android:src="@drawable/baseline_star_24" />
+                    android:src="@drawable/baseline_star_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_rate"
+                    app:layout_constraintVertical_bias="0.928" />
 
                 <TextView
                     android:id="@+id/tv_rating"
@@ -106,7 +130,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv_rate"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="8dp"
                     android:layout_toEndOf="@+id/iv_rating"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_rating"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_rate"
                     tools:text="@string/rating" />
 
                 <TextView
@@ -116,6 +146,13 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv_genre"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
                     tools:text="@string/genres" />
 
                 <TextView
@@ -125,9 +162,16 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/tv_page"
                     android:layout_alignParentEnd="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_page"
+                    app:layout_constraintVertical_bias="0.923"
                     tools:text="@string/pages" />
 
-            </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -154,7 +198,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="8dp"
+            android:layout_margin="16dp"
             android:gravity="bottom">
 
             <Button

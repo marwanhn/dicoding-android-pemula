@@ -3,7 +3,6 @@ package com.dicoding.bacabareng
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -28,6 +27,12 @@ class MainActivity : AppCompatActivity() {
 
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(this)
         binding.rvBooks.layoutManager = layoutManager
+        binding.profile.setOnClickListener {
+            // Tambahkan kode yang ingin Anda jalankan saat tombol diklik di sini
+            // Misalnya, tampilkan sebuah pesan toast:
+            val launchAbout = Intent(this@MainActivity, AboutActivity::class.java)
+            startActivity(launchAbout)
+        }
 
         with(binding){
             rvBooks.adapter = booksAdapter
@@ -41,15 +46,15 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.menu_account -> {
-                val launchAbout = Intent(this@MainActivity, AboutActivity::class.java)
-                startActivity(launchAbout)
-            }
-        }
-        return super.onOptionsItemSelected(item)
-    }
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        when(item.itemId){
+//            R.id.menu_account -> {
+//                val launchAbout = Intent(this@MainActivity, AboutActivity::class.java)
+//                startActivity(launchAbout)
+//            }
+//        }
+//        return super.onOptionsItemSelected(item)
+//    }
 
 
 }
