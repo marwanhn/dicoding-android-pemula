@@ -69,11 +69,7 @@ This project is intended to be used as a learning reference and not to be copied
 - [x] Showing the detail page when one of the items is pressed
 - [x] Displaying my photo, name, and email registered with Dicoding. 
 
-## Installation
-Feel free to clone this repository! ^-^
-```
-https://github.com/MarwanHN/dicoding-android-pemula-submission.git
-```
+
 
 ### Author
 Marwan Hasbun Nur
