@@ -4,7 +4,7 @@ Submission for "Membuat Aplikasi Android untuk Pemula" Course in <a href="https:
 <ul>
   <li>This is a repository that contains the source code of my project for the "Belajar Membuat Aplikasi Android untuk Pemula" course on Dicoding platform. This course is part of the "Kelas Android" learning path in the DICODING X GDSC UIN JAKARTA self-paced online course with interactive video lessons and tutor support. I strive to implement best practices in Kotlin programming language and Android framework in this project.</li>
   <li>Rating: ⭐⭐⭐⭐⭐</li>
-  <li>Estimated Project: 2 Week</li>
+  <li>Estimated Project: 2 Days 5 Hours</li>
 </ul>
 
 ## Disclaimer ⚠
