@@ -8,7 +8,7 @@ Submission for "Membuat Aplikasi Android untuk Pemula" Course in <a href="https:
 </ul>
 
 ## Disclaimer ⚠
-This project is intended to be used as a learning reference and not to be copied or submitted as your own project. I am not responsible for any act of plagiarism as the author, and it is considered unacceptable.
+Jadikan project ini sebagai referensi untuk belajar, jika terkena plagiarisme saya tidak bertanggung jawab. Terima kasih.
 ## Screenshot 📱
 <p>🌙 Dark Mode 🌙 </p>
  
